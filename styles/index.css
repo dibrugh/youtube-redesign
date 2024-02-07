@@ -54,7 +54,6 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding-right: 3.5rem;
-	width: 100%;
 }
 
 .header__mobile {
@@ -64,6 +63,7 @@ body {
 .header__left {
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 
 .header__burger-menu {
@@ -99,8 +99,8 @@ body {
 	background: #ebebeb;
 	border-radius: 26px;
 	padding: 0 1.7rem;
-	width: 66.8rem;
-	margin-right: 35rem;
+	flex: 0 1 67rem;
+	margin-right: 5rem;
 }
 
 .search__input {
