@@ -14,20 +14,22 @@
 		<title>YouTube Redesign</title>
 	</head>
 	<body>
-		<div class="wrapper">
-			<!-- HEADER -->
-			<div class="container">
-				<header class="header">
+		<!-- HEADER -->
+		<div class="container">
+			<header class="header">
+				<div class="header__left">
 					<div class="header__burger-menu">
 						<span class="burger-line"></span>
 						<span class="burger-line"></span>
 						<span class="burger-line"></span>
 					</div>
-					<img
-						class="header__logo"
-						src="./assets/img/header/logo.svg"
-						alt="youtube logo"
-					/>
+					<a href="#"
+						><img
+							class="header__logo"
+							src="./assets/img/header/logo.svg"
+							alt="youtube logo"
+					/></a>
+
 					<div class="header__search search">
 						<input type="text" class="search__input" placeholder="Search" />
 						<img
@@ -36,452 +38,480 @@
 							class="search__icon"
 						/>
 					</div>
-					<nav class="header__menu">
-						<ul class="menu__list">
-							<li class="menu__list_item">
+				</div>
+				<nav class="header__menu">
+					<ul class="menu__list">
+						<li class="menu__list_item">
+							<a href="#">
 								<img
 									src="./assets/img/header/camera.svg"
 									alt="header menu icon"
 									class="menu__list_item-img"
 								/>
-							</li>
-							<li class="menu__list_item">
-								<img
+							</a>
+						</li>
+						<li class="menu__list_item">
+							<a href="#"
+								><img
 									src="./assets/img/header/dots.svg"
 									alt="header menu icon"
 									class="menu__list_item-img"
-								/>
-							</li>
-							<li class="menu__list_item">
-								<img
+							/></a>
+						</li>
+						<li class="menu__list_item">
+							<a class="notification" href="#"
+								><img
 									src="./assets/img/header/bell.svg"
 									alt="header menu icon"
 									class="menu__list_item-img"
-								/>
-							</li>
-							<li class="menu__list_item">
-								<img
+								/><span class="notification__missed">3</span></a
+							>
+						</li>
+
+						<li class="menu__list_item">
+							<a href="#"
+								><img
 									src="./assets/img/header/userpic.svg"
 									alt="header menu icon"
 									class="menu__list_item-img"
+							/></a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="header__mobile">
+				<img
+					class="header__logo"
+					src="./assets/img/header/logo.svg"
+					alt="youtube logo"
+				/>
+				<div class="header__mobile_left">
+					<img
+						src="./assets/img/header/search.svg"
+						alt="search-icon"
+						class="search__icon"
+					/>
+					<img
+						src="./assets/img/header/userpic.svg"
+						alt="header menu icon"
+						class="menu__list_item-img"
+					/>
+				</div>
+			</div>
+			<!-- MAIN -->
+			<main class="main">
+				<!-- ASIDE START -->
+				<aside class="aside">
+					<nav class="aside__main">
+						<ul class="aside__list">
+							<li class="aside__list_item">
+								<img src="./assets/img/navigation/icon-1.svg" alt="Home" />
+								<p class="active">Home</p>
+							</li>
+							<li class="aside__list_item">
+								<img src="./assets/img/navigation/icon-2.svg" alt="Trending" />
+								<p>Trending</p>
+							</li>
+							<li class="aside__list_item">
+								<img
+									src="./assets/img/navigation/icon-3.svg"
+									alt="Subscription"
 								/>
+								<p>Subscription</p>
 							</li>
 						</ul>
 					</nav>
-				</header>
-			</div>
-			<!-- MAIN -->
-			<div class="container">
-				<main class="main">
-					<!-- ASIDE -->
-					<aside class="aside">
-						<nav class="aside__nav">
-							<ul class="nav__list">
-								<li class="nav__list_item active">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-1.svg"
-										alt="nav list icon"
-									/>
-									<p>Home</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-2.svg"
-										alt="nav list icon"
-									/>
-									<p>Trending</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-3.svg"
-										alt="nav list icon"
-									/>
-									<p>Subscriptions</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-4.svg"
-										alt="nav list icon"
-									/>
-									<p>Library</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-5.svg"
-										alt="nav list icon"
-									/>
-									<p>History</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-6.svg"
-										alt="nav list icon"
-									/>
-									<p>Watch later</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-7.svg"
-										alt="nav list icon"
-									/>
-									<p>Favourites</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-8.svg"
-										alt="nav list icon"
-									/>
-									<p>Liked videos</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-9.svg"
-										alt="nav list icon"
-									/>
-									<p>Music</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-10.svg"
-										alt="nav list icon"
-									/>
-									<p>Games</p>
-								</li>
-								<li class="nav__list_item">
-									<img
-										class="nav__list_item-icon"
-										src="./assets/img/navigation/icon-11.svg"
-										alt="nav list icon"
-									/>
-									<p>Show more</p>
-								</li>
-							</ul>
-						</nav>
-						<div class="aside__subscriptions">
-							<p class="subscriptions__title">Subscriptions</p>
-							<ul class="subscriptions__list">
-								<li class="subscriptions__list_item">
-									<img
-										src="./assets/img/subscription/face-1.svg"
-										alt="subscriptions list icon"
-										class="subscriptions__list_item-icon"
-									/>Gussie Singleton
-								</li>
-								<li class="subscriptions__list_item">
-									<img
-										src="./assets/img/subscription/face-2.svg"
-										alt="subscriptions list icon"
-										class="subscriptions__list_item-icon"
-									/>Nora Francis
-								</li>
-								<li class="subscriptions__list_item">
-									<img
-										src="./assets/img/subscription/face-3.svg"
-										alt="subscriptions list icon"
-										class="subscriptions__list_item-icon"
-									/>Belle Briggs
-								</li>
-								<li class="subscriptions__list_item">
-									<img
-										src="./assets/img/subscription/face-4.svg"
-										alt="subscriptions list icon"
-										class="subscriptions__list_item-icon"
-									/>Eunice Cortez
-								</li>
-								<li class="subscriptions__list_item">
-									<img
-										src="./assets/img/subscription/face-5.svg"
-										alt="subscriptions list icon"
-										class="subscriptions__list_item-icon"
-									/>Emma Hanson
-								</li>
-								<li class="subscriptions__list_item">
-									<img
-										src="./assets/img/subscription/face-6.svg"
-										alt="subscriptions list icon"
-										class="subscriptions__list_item-icon"
-									/>Leah Berry
-								</li>
-								<li class="subscriptions__list_item setting">
-									<img
-										src="./assets/img/setting.svg"
-										alt="Setting"
-										class="subscriptions__list_item-icon"
-									/>Setting
-								</li>
-							</ul>
-						</div>
-					</aside>
-					<!-- MAIN CONTENT -->
-					<div class="main__content">
-						<!-- SECTION - USER -->
-						<section class="section user">
-							<div class="user__info">
-								<div class="user__info-content">
-									<img
-										class="user__info_logo"
-										src="./assets/img/user.svg"
-										alt="user logo"
-									/>
-									<p class="section__title user__info_name">Dollie Blair</p>
+					<nav class="aside__second">
+						<ul class="aside__list">
+							<li class="aside__list_item">
+								<img src="./assets/img/navigation/icon-4.svg" alt="Library" />
+								<p>Library</p>
+							</li>
+							<li class="aside__list_item">
+								<img src="./assets/img/navigation/icon-5.svg" alt="History" />
+								<p>History</p>
+							</li>
+							<li class="aside__list_item">
+								<img
+									src="./assets/img/navigation/icon-6.svg"
+									alt="Watch later"
+								/>
+								<p>Watch later</p>
+							</li>
+							<li class="aside__list_item">
+								<img
+									src="./assets/img/navigation/icon-7.svg"
+									alt="Favourites"
+								/>
+								<p>Favourites</p>
+							</li>
+							<li class="aside__list_item">
+								<img
+									src="./assets/img/navigation/icon-8.svg"
+									alt="Liked videos"
+								/>
+								<p>Liked videos</p>
+							</li>
+							<li class="aside__list_item">
+								<img src="./assets/img/navigation/icon-9.svg" alt="Music" />
+								<p>Music</p>
+							</li>
+							<li class="aside__list_item">
+								<img src="./assets/img/navigation/icon-10.svg" alt="Games" />
+								<p>Games</p>
+							</li>
+							<li class="aside__list_item">
+								<img
+									src="./assets/img/navigation/icon-11.svg"
+									alt="Show more"
+								/>
+								<p>Show more</p>
+							</li>
+						</ul>
+					</nav>
+					<ul class="aside__subscriptions">
+						<p class="aside__subscriptions_title">Subscriptions</p>
+						<li class="aside__list_item">
+							<img
+								src="./assets/img/subscription/face-1.svg"
+								alt="Gussie Singleton"
+							/>
+							<p>Gussie Singleton</p>
+						</li>
+						<li class="aside__list_item">
+							<img
+								src="./assets/img/subscription/face-2.svg"
+								alt="Nora Francis"
+							/>
+							<p>Nora Francis</p>
+						</li>
+						<li class="aside__list_item">
+							<img
+								src="./assets/img/subscription/face-3.svg"
+								alt="Belle Briggs"
+							/>
+							<p>Belle Briggs</p>
+						</li>
+						<li class="aside__list_item">
+							<img
+								src="./assets/img/subscription/face-4.svg"
+								alt="Eunice Cortez"
+							/>
+							<p>Eunice Cortez</p>
+						</li>
+						<li class="aside__list_item">
+							<img
+								src="./assets/img/subscription/face-5.svg"
+								alt="Emma Hanson"
+							/>
+							<p>Emma Hanson</p>
+						</li>
+						<li class="aside__list_item">
+							<img
+								src="./assets/img/subscription/face-6.svg"
+								alt="Leah Berry"
+							/>
+							<p>Leah Berry</p>
+						</li>
+					</ul>
+					<div class="aside__setting">
+						<li class="aside__list_item">
+							<img src="./assets/img/setting.svg" alt="Setting" />
+							<p>Setting</p>
+						</li>
+					</div>
+				</aside>
+				<!-- MAIN CONTENT -->
+				<div class="main__content">
+					<!-- SECTION USER -->
+					<section class="videos">
+						<div class="videos__header">
+							<div class="user__info-content">
+								<img
+									class="user__info_logo"
+									src="./assets/img/user.svg"
+									alt="user logo"
+								/>
+								<p class="section__title user__info_name">Dollie Blair</p>
+							</div>
+							<div class="controls">
+								<div class="controls__left">
+									<img src="./assets/img/left.svg" alt="" />
 								</div>
-								<div class="controls">
-									<div class="controls__left">
-										<img src="./assets/img/left.svg" alt="left control" />
-									</div>
-									<div class="controls__right">
-										<img src="./assets/img/right.svg" alt="right control" />
-									</div>
+								<div class="controls__right">
+									<img src="./assets/img/right.svg" alt="" />
 								</div>
 							</div>
-							<ul class="user__videos">
-								<li class="user__videos_item">
+						</div>
+						<div class="videos__main">
+							<ul class="videos__list">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/user-video-1.jpg"
-										alt="A Brief History Of Creation"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">
+									<p class="videos__list_item-title">
 										A Brief History Of Creation
 									</p>
-									<div class="user__videos_item-info">
+									<div class="videos__list_item-additional">
 										<p>80k views · 3 days ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/user-video-2.jpg"
-										alt="Selecting The Right Hotel"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">
+									<p class="videos__list_item-title">
 										Selecting The Right Hotel
 									</p>
-									<div class="user__videos_item-info">
+									<div class="videos__list_item-additional">
 										<p>123k views · 1 months ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/user-video-3.jpg"
-										alt="Asteroids"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Asteroids</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Asteroids</p>
+									<div class="videos__list_item-additional">
 										<p>43k views · 12 days ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/user-video-4.jpg"
-										alt="Telescopes 101"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Telescopes 101</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Telescopes 101</p>
+									<div class="videos__list_item-additional">
 										<p>11k views · 6 months ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/user-video-5.jpg"
-										alt="Medical Care Is Just"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Medical Care Is Just</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Medical Care Is Just</p>
+									<div class="videos__list_item-additional">
 										<p>18k views · 2 days ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/user-video-6.jpg"
-										alt="Moon Gazing"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Moon Gazing</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Moon Gazing</p>
+									<div class="videos__list_item-additional">
 										<p>67k views · 4 months ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
 							</ul>
-						</section>
-						<!-- SECTION RECOMMENDED -->
-						<section class="section recommended">
-							<div class="user__info">
-								<div class="user__info-content">
-									<p class="section__title">Recommended</p>
+						</div>
+					</section>
+					<!-- SECTION USER END-->
+					<!-- SECTION RECOMMENDED -->
+					<section class="videos">
+						<div class="videos__header">
+							<p class="videos__title">Recommended</p>
+							<div class="controls">
+								<div class="controls__left">
+									<img src="./assets/img/left.svg" alt="" />
 								</div>
-								<div class="controls">
-									<div class="controls__left">
-										<img src="./assets/img/left.svg" alt="left control" />
-									</div>
-									<div class="controls__right">
-										<img src="./assets/img/right.svg" alt="right control" />
-									</div>
+								<div class="controls__right">
+									<img src="./assets/img/right.svg" alt="" />
 								</div>
 							</div>
-							<ul class="recommended__videos">
-								<li class="user__videos_item">
+						</div>
+						<div class="videos__main">
+							<ul class="videos__list_big">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/rec-video-1.jpg"
-										alt="Dude You Re Getting A Telescope"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">
+									<p class="videos__list_item-title">
 										Dude You Re Getting A Telescope
 									</p>
-									<div class="user__videos_item-info">
+									<div class="videos__list_item-additional">
 										<p>34k views · 5 months ago</p>
-										<p>Gussie French</p>
+										<p>Food & Drink</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/rec-video-2.jpg"
-										alt="Moon Gazing"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Moon Gazing</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Moon Gazing</p>
+									<div class="videos__list_item-additional">
 										<p>54k views · 11 months ago</p>
 										<p>Edward Osborne</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/rec-video-3.jpg"
-										alt="Moon Gazing"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Moon Gazing</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Moon Gazing</p>
+									<div class="videos__list_item-additional">
 										<p>125k views · 4 months ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
 							</ul>
-						</section>
-						<!-- SECTION CHANNEL -->
-						<section class="section channel">
-							<div class="user__info">
-								<div class="user__info-content">
-									<img
-										class="user__info_logo"
-										src="./assets/img/channel-icon.svg"
-										alt="user logo"
-									/>
-									<p class="section__title user__info_name">Food & Drink</p>
-									<p class="section__title_additional">
-										Recommended channel for you
-									</p>
+						</div>
+					</section>
+					<!-- SECTION RECOMMENDED END-->
+					<!-- SECTION CHANNEL-->
+					<section class="videos">
+						<div class="videos__header">
+							<div class="user__info-content">
+								<img
+									class="user__info_logo"
+									src="./assets/img/channel-icon.svg"
+									alt="user logo"
+								/>
+								<p class="section__title user__info_name">Food & Drink</p>
+								<p class="section__title_additional">
+									Recommended channel for you
+								</p>
+							</div>
+							<div class="controls">
+								<button class="controls__subscription-btn">
+									Subscribe 2.3m
+								</button>
+								<div class="controls__left">
+									<img src="./assets/img/left.svg" alt="" />
 								</div>
-
-								<div class="controls">
-									<button class="subscribe">Subscribe 2.3m</button>
-									<div class="controls__left">
-										<img src="./assets/img/left.svg" alt="left control" />
-									</div>
-									<div class="controls__right">
-										<img src="./assets/img/right.svg" alt="right control" />
-									</div>
+								<div class="controls__right">
+									<img src="./assets/img/right.svg" alt="" />
 								</div>
 							</div>
-							<ul class="user__videos">
-								<li class="user__videos_item">
+						</div>
+						<div class="videos__main">
+							<ul class="videos__list">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/channel-1.jpg"
-										alt="Astronomy Or Astrology"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Astronomy Or Astrology</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Astronomy Or Astrology</p>
+									<div class="videos__list_item-additional">
 										<p>240k views · 4 months ago</p>
 										<p>Food & Drink</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/channel-2.jpg"
-										alt="Advertising Outdoors"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Advertising Outdoors</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Advertising Outdoors</p>
+									<div class="videos__list_item-additional">
 										<p>13k views · 15 days ago</p>
 										<p>Food & Drink</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/channel-3.jpg"
-										alt="Radio Astronomy"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Radio Astronomy</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Radio Astronomy</p>
+									<div class="videos__list_item-additional">
 										<p>1k views · 11 months ago</p>
 										<p>Food & Drink</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/channel-4.jpg"
-										alt="A Good Autoresponder"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">A Good Autoresponder</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">A Good Autoresponder</p>
+									<div class="videos__list_item-additional">
 										<p>45k views · 2 months ago</p>
 										<p>Food & Drink</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/channel-5.jpg"
-										alt="Baby Monitor Technology"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Baby Monitor Technology</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Baby Monitor Technology</p>
+									<div class="videos__list_item-additional">
 										<p>86k views · 7 days ago</p>
 										<p>Food & Drink</p>
 									</div>
 								</li>
-								<li class="user__videos_item">
+								<li class="videos__list_item">
 									<img
 										src="./assets/img/videos/channel-6.jpg"
-										alt="Asteroids"
-										class="user__videos_item-img"
+										alt=""
+										class="videos__list_item-img"
 									/>
-									<p class="user__videos_item-title">Asteroids</p>
-									<div class="user__videos_item-info">
+									<p class="videos__list_item-title">Asteroids</p>
+									<div class="videos__list_item-additional">
 										<p>123k views · 4 months ago</p>
 										<p>Dollie Blair</p>
 									</div>
 								</li>
 							</ul>
-						</section>
-					</div>
-				</main>
-			</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer class="footer__mobile">
+				<nav class="mobile__navigation">
+					<ul class="mobile__list">
+						<li class="mobile__list-item">
+							<img src="./assets/img/navigation/icon-1.svg" alt="Home" />
+							<p>Home</p>
+						</li>
+						<li class="mobile__list-item">
+							<img src="./assets/img/navigation/icon-2.svg" alt="Trending" />
+							<p>Trending</p>
+						</li>
+						<li class="mobile__list-item">
+							<img
+								src="./assets/img/navigation/icon-3.svg"
+								alt="Subscription"
+							/>
+							<p>Subscription</p>
+						</li>
+						<li class="mobile__list-item">
+							<img src="./assets/img/navigation/icon-4.svg" alt="Library" />
+							<p>Library</p>
+						</li>
+					</ul>
+				</nav>
+			</footer>
 		</div>
 	</body>
 </html>
