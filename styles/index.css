@@ -654,7 +654,7 @@ body {
 		height: 26rem;
 		width: 128rem;
 		padding: 4rem 0;
-		border-top: 0.2rem solid rgb(137, 137, 137);
+		/* border-top: 0.2rem solid rgb(137, 137, 137); */
 		background: white;
 		position: fixed;
 		bottom: 0;
