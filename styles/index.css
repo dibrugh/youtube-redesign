@@ -129,11 +129,11 @@ body {
 	transition: ease 0.2s;
 }
 
-.menu__list_item:hover,
+/* .menu__list_item:hover,
 .user__header_subs img:hover {
 	scale: 1.2;
 }
-
+ */
 .notification {
 	position: relative;
 }
@@ -441,9 +441,9 @@ body {
 	margin-right: 0;
 }
 
-.videos__list_item:hover {
+/* .videos__list_item:hover {
 	scale: 1.2;
-}
+} */
 
 .videos__list_item-title {
 	font-weight: 700;
