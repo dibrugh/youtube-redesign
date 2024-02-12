@@ -1,5 +1,5 @@
 html {
-	box-sizing: border-box;
+	box-sizing: gder-box;
 	font-size: 10px;
 }
 
@@ -126,10 +126,10 @@ body {
 	transition: ease 0.2s;
 }
 
-.menu__list_item:hover,
+/* .menu__list_item:hover,
 .user__header_subs img:hover {
 	scale: 1.2;
-}
+} */
 
 .notification {
 	position: relative;
@@ -312,9 +312,9 @@ body {
 	margin-bottom: 0.5rem;
 }
 
-.videos__list_item:hover {
+/* .videos__list_item:hover {
 	scale: 1.2;
-}
+} */
 
 .videos__list_item-title {
 	font-weight: 700;
