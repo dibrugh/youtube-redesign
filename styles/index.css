@@ -272,7 +272,7 @@ body {
 	text-align: center;
 	color: #fff;
 	border-radius: 20px;
-	padding: 0 2.5rem;
+	padding: 0 1.8rem;
 	height: 3.3rem;
 	border: none;
 	background: #f00;
@@ -300,7 +300,7 @@ body {
 }
 
 .channel__list_item {
-	margin-right: 5%;
+	margin-right: 6.5%;
 }
 
 .channel__list_item:nth-last-child(2) {
@@ -322,7 +322,7 @@ body {
 }
 
 .channel__main_text-title {
-	/* width: 35rem; */
+	width: 35rem;
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 131%;
@@ -337,7 +337,6 @@ body {
 	line-height: 18px;
 	color: #000;
 	opacity: 0.6;
-	margin-bottom: 2rem;
 }
 
 .channel__main_text-views {
@@ -353,11 +352,11 @@ body {
 
 .channel__main_image-container {
 	margin-right: 2.6rem;
-	min-width: 55%;
+	min-width: 50%;
 }
 
 .channel__aside {
-	padding-right: 2.5rem;
+	padding-right: 6.5rem;
 }
 
 .channel__aside_title {
@@ -393,7 +392,7 @@ body {
 	font-weight: 700;
 	font-size: 20px;
 	color: #19202c;
-	padding: 5rem 10.2rem 0 0.5rem;
+	padding: 4.5rem 10.2rem 0 0.5rem;
 }
 
 .videos__title {
@@ -425,16 +424,17 @@ body {
 	display: flex;
 }
 
-.videos__list_item-img {
-	max-width: 100%;
-	margin-bottom: 1.4rem;
-}
-
 .videos__list_item {
-	flex-shrink: 0;
-	margin-right: 3rem;
+	margin-right: 2.5%;
 	cursor: pointer;
 	transition: ease 0.2s;
+	flex-shrink: 0;
+}
+
+.videos__list_item-img {
+	max-width: 100%;
+	width: 13vw;
+	margin-bottom: 0.6rem;
 }
 
 .videos__list_item:last-child {
@@ -464,6 +464,10 @@ body {
 	font-weight: 400;
 	font-size: 11px;
 	color: #c2c2c2;
+	margin-right: 3px;
+}
+.videos__list_item-additional p:last-child {
+	margin-right: 0;
 }
 /* MAIN STYLES END */
 
@@ -482,11 +486,13 @@ body {
 		width: 80rem;
 	} */
 	.channel__main_text {
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.channel__main_text-title {
 		font-size: 2.5rem;
-		/* width: 80rem; */
+		display: contents;
 	}
 	.channel__main_text-desc {
 		font-size: 1.5rem;
@@ -509,18 +515,15 @@ body {
 		justify-content: center;
 	}
 
-	/* .videos__list {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 2rem;
-	} */
-
 	.videos__title {
 		font-size: 2.5rem;
 	}
 
 	.videos__list_item-title {
 		font-size: 1.5rem;
+	}
+	.videos__list_item-img {
+		width: 100%;
 	}
 }
 
@@ -544,7 +547,9 @@ body {
 
 	.channel__list {
 		flex-wrap: wrap;
-		gap: 2rem;
+	}
+	.channel__list_item {
+		margin-bottom: 2rem;
 	}
 
 	.channel__main {
@@ -556,7 +561,7 @@ body {
 	}
 
 	.channel__main_text-desc {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 
 	.videos__header {
@@ -575,7 +580,7 @@ body {
 
 	.videos__list_item {
 		margin-right: 0;
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
 	}
 
 	.videos__list_item-title {
@@ -589,8 +594,16 @@ body {
 
 @media (max-width: 540px) {
 	.header,
-	.aside {
+	.aside,
+	.channel__main,
+	.videos__header {
 		display: none;
+	}
+	.main__content {
+		padding-top: 1.5rem;
+	}
+	.main__content_bg {
+		height: 10rem;
 	}
 	.container,
 	.main__content_bg-img {
@@ -599,18 +612,18 @@ body {
 	.header__mobile {
 		display: flex;
 		align-items: center;
-		padding: 2rem;
+		padding: 1rem 1.5rem;
 	}
 	.header__youtube {
 		margin-right: 1.5rem;
 	}
 	.header__title {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: bold;
 		margin-right: auto;
 	}
 	.header__icon {
-		margin-right: 4rem;
+		margin-right: 5rem;
 	}
 	.header__icon:last-child {
 		margin-right: 0;
@@ -619,16 +632,12 @@ body {
 		height: 100%;
 	}
 
-	.main__content_bg {
-		height: 10%;
-	}
 	.main__content_bg-img {
 		height: 100%;
 	}
 
 	.user__header,
-	.channel,
-	.videos {
+	.channel {
 		padding: 2rem 2rem 0;
 	}
 
@@ -645,7 +654,7 @@ body {
 
 	.user__header_icon {
 		align-self: flex-start;
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.user__info p {
@@ -663,7 +672,15 @@ body {
 	.user__header_subs-btn {
 		margin-left: 0;
 	}
-
+	.channel {
+		padding-top: 3.2rem;
+	}
+	.channel__content {
+		width: 100%;
+	}
+	.channel__list {
+		justify-content: space-between;
+	}
 	.channel__list_item:nth-child(n + 4) {
 		display: none;
 	}
@@ -671,23 +688,25 @@ body {
 	.hidden {
 		display: inline;
 	}
-
+	.videos__main {
+		padding-top: 0;
+	}
 	.videos__header {
 		padding: 0;
 	}
 
 	.videos__list_item {
+		width: 90%;
 		margin-right: 0;
 	}
 
 	.videos__list_item-img {
-		width: 70vw;
+		width: 100%;
 	}
 
 	.footer__mobile {
 		display: flex;
 		padding: 2rem;
-		/* height: 26rem; */
 		width: 100%;
 		padding: 2rem 0;
 		border-top: 0.2rem solid rgb(137, 137, 137);
